@@ -1,6 +1,5 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const path = require("path");
 const generateMarkdown = require("./generateMarkdown/generateMarkdown.js");
 
 const questions = [
@@ -53,13 +52,19 @@ const questions = [
 ]
 
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    return fs.writeFile(fileName, data, (err) => {
+        if(err)
+            throw err;
+        console.log("Information gathered, please be patient during generation...")
+    })
 }
 
 function init() {
-    inquirer.createPromptModule(questions).then((responses) => {
-        console.log("Creating ReadMe.md file - Please be patient");
-        writeToFile("./GeneratedReadMe/ReadMe.md", generateMarkdown({...responses}));
-    })
-}
+    inquirer.prompt(questions)
+    .then(function (userInput) {
+        console.log(userInput);
+        writeToFile("./GeneratedReadMe/ReadMe.md", generateMarkdown(userInput));
+    });
+};
+
 init();

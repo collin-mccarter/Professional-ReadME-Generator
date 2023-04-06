@@ -1,30 +1,36 @@
-const { isModuleNamespaceObject } = require("util/types")
 
 function generateMarkdown(data) {
-    return `${data.title}
-    by ${data.name}
-    ## Table of Contents:
-    * [Description] (#description)
-    * [Install Instrutions] (#requirements)
-    * [Usage] (#usage)
-    * [Contributions] (#contribution)
-    * [Test Instructions] (#tests)
-    * [Contact] (#contact)
+    return `
+# ${data.title}
+    Project Created By: ${data.github}
+
+## Table of Contents:
+- [Description] (#description)
+- [Installation] (#installation)
+- [Usage] (#usage)
+- [Contributions] (#contribution)
+- [Testing] (#testing)
+- [Contact] (#contact)
     
-    ## Description
+## Description
     ${data.description}
-    ## Installation
+
+## Installation
     ${data.instructions}
-    ## Usage
+
+## Usage
     ${data.usage}
-    ## Contribution
+
+## Contribution
     ${data.contribution}
-    ## Testing
+
+## Testing
     ${data.test}
-    ## Contact
-        * GitHub Profile: ${data.github} 
-        * Email: ${data.email}
-    `
+
+## Contact
+- GitHub Profile: [${data.github}] (https://github.com/${data.github})
+- Email: ${data.email}
+    `;
 }
 
 module.exports = generateMarkdown;
