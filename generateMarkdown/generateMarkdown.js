@@ -5,12 +5,12 @@ function generateMarkdown(data) {
     Project Created By: ${data.github}
 
 ## Table of Contents:
-- [Description] (#description)
-- [Installation] (#installation)
-- [Usage] (#usage)
-- [Contributions] (#contribution)
-- [Testing] (#testing)
-- [Contact] (#contact)
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributions](#contribution)
+- [Testing](#testing)
+- [Contact](#contact)
     
 ## Description
     ${data.description}
