@@ -36,7 +36,7 @@ function generateMarkdown(data) {
 
 ## Contact
 If there are any additional questions regarding the application, you can reach me through the following methods:
-- GitHub Profile: [${data.github}] (https://github.com/${data.github})
+- GitHub Profile: ${data.github} (https://github.com/${data.github})
 - Email: ${data.email}
     `;
 }
