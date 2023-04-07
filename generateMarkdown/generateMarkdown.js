@@ -1,3 +1,6 @@
+// Create a function to generate markdown for README
+// Create a function that returns a license badge based on which license is passed in
+// Create a function that returns the license section of README
 
 function generateMarkdown(data) {
     return `
@@ -38,4 +41,5 @@ If there are any additional questions regarding the application, you can reach m
     `;
 }
 
+// exporting the generateMarkdown result
 module.exports = generateMarkdown;
