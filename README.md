@@ -40,7 +40,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 ## Link to Walkthrough Video
-
+https://drive.google.com/file/d/1OXe-jNTr6VvITvpwiRs4Rkg2R-fCkrPS/view
 
 ### Repository Quality: 13%
 * Repository contains a high-quality README with description and a link to walkthrough video.

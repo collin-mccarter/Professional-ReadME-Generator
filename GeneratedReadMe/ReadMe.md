@@ -1,35 +1,36 @@
 
-# test
-    Project Created By: test
+# name of project
+    Project Created By: collin-mccarter
 
 ## License:
-![badge](https://img.shields.io/badge/license-BSd-green)
-* This application is covered by the BSd license.   
+![badge](https://img.shields.io/badge/license-MIT-green)
+* This application is covered by the MIT license.   
 
 ## Table of Contents:
 - [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contribution)
-- [Tests](#testing)
+- [Tests](#tests)
 - [Contact](#contact)
     
 ## Description
-    test
+    purpose and functionality
 
 ## Installation
-    test
+    installation instructions
 
 ## Usage
-    test
+    usage
 
 ## Contribution
-    test
+    contribution guidelines
 
-## Testing
-    test
+## Tests
+    
 
 ## Contact
-- GitHub Profile: [test] (https://github.com/test)
-- Email: test
+If there are any additional questions regarding the application, you can reach me through the following methods:
+- GitHub Profile: collin-mccarter (https://github.com/collin-mccarter)
+- Email: collinmccarter12@gmail.com
     
